@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy National Girlfriend Day 💕</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+      font-family: "Segoe UI", sans-serif;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      margin-top: 3rem;
+      font-size: 3rem;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      animation: fadeIn 3s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Floating Hearts */
+    .heart {
+      color: red;
+      font-size: 2rem;
+      position: absolute;
+      animation: floatHearts 5s infinite ease-in-out;
+      opacity: 0.4;
+    }
+
+    @keyframes floatHearts {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+      }
+
+      100% {
+        transform: translateY(-100vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    /* Retro TV Styles */
+    .tv-wrapper {
+      display: flex;
+      justify-content: center;
+      margin: 4rem auto;
+      perspective: 1000px;
+    }
+
+    .tv-body {
+      display: flex;
+      background: #5a3921;
+      /* Wood tone */
+      border-radius: 30px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      gap: 2rem;
+      border: 6px solid #3b2613;
+    }
+
+    .tv-frame {
+      background: #c0c0c0;
+      /* Silver bezel */
+      border: 12px solid #a8a8a8;
+      border-radius: 16px;
+      width: 500px;
+      height: 360px;
+      box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.7),
+        inset 0 0 10px #888;
+      transform: rotateY(-5deg);
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .screen {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background: #111;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: inset 0 0 15px #000;
+    }
+
+    .screen img {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+      object-position: center;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 1s ease;
+      z-index: 1;
+      border-radius: 12px;
+    }
+
+    .screen video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .screen img:nth-child(2) {
+      animation-delay: 4s;
+    }
+
+    .screen img:nth-child(3) {
+      animation-delay: 8s;
+    }
+
+    @keyframes slideShow {
+      0% {
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      30% {
+        opacity: 1;
+      }
+
+      40% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .screen::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: repeating-linear-gradient(to bottom,
+          rgba(255, 255, 255, 0.03),
+          rgba(255, 255, 255, 0.03) 2px,
+          transparent 2px,
+          transparent 4px);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .tv-knobs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.2rem;
+      padding-top: 1rem;
+    }
+
+    .knob {
+      width: 30px;
+      height: 30px;
+      background: radial-gradient(circle, #dcdcdc, #888);
+      border-radius: 50%;
+      box-shadow:
+        inset -3px -3px 6px rgba(255, 255, 255, 0.3),
+        inset 3px 3px 6px rgba(0, 0, 0, 0.5);
+      border: 2px solid #333;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>💖 Happy National Girlfriend Day 2025 💖</h1>
+  <p>
+    I wanted to do something a lil different and thought to myself...<br />Why
+    don't I use my programming / nerdy skills to build something 🤓...<br />You
+    are loved more than words can say. 💌<br />
+    <br />Lets sit back, relax, and admire this work of art 😍
+  </p>
+
+  <div class="tv-wrapper">
+    <div class="tv-body">
+      <div class="tv-frame">
+        <div class="screen">
+          <!-- <img src="https://placekitten.com/500/360" alt="Slide 1" /> -->
+          <!-- <img src="./assets/86dc9583204e4107a9cbd49f7eede35c.mov" alt="tiktok dance" /> -->
+          <video autoplay muted playsinline<source src="./assets/86dc9583204e4107a9cbd49f7eede35c.mov"
+            type="video/mp4">></video>
+          <img src="./assets/2014-08-02 10.39.38.jpeg" alt="Slide 2" />
+          <img src="./assets/2005-08-01 14.12.41.jpeg" alt="Slide 3" />
+          <img src="./assets/2006-05-20 19.55.34.jpeg" alt="Slide 4" />
+          <img src="./assets/IMG_0930.JPG" alt="Slide 5" />
+          <img src="./assets/24-12-07 16-51-28 8791.jpg" alt="Slide 7" />
+          <img src="./assets/IMG_9951.jpeg" alt="Slide 8" />
+          <img src="./assets/IMG_0965.jpeg" alt="Slide 9" />
+          <img src="./assets/IMG_0973.jpeg" alt="Slide 10" />
+        </div>
+      </div>
+      <div class="tv-knobs">
+        <div class="knob"></div>
+        <div class="knob"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Hearts Script -->
+  <script>
+    const colors = ["❤️", "💗", "💕", "💞", "💘", "💓", "💖"];
+    for (let i = 0; i < 12; i++) {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.top = Math.random() * 100 + "vh";
+      heart.style.fontSize = Math.random() * 20 + 20 + "px";
+      heart.innerText = colors[Math.floor(Math.random() * colors.length)];
+      heart.style.animationDuration = Math.random() * 5 + 3 + "s";
+      document.body.appendChild(heart);
+    }
+  </script>
+
+  <!-- Video to Image Slideshow Script -->
+  <script>
+    const mediaElements = document.querySelectorAll(
+      ".screen img, .screen video",
+    );
+    let currentIndex = 0;
+
+    function playNext() {
+      // Hide all media
+      mediaElements.forEach((el) => {
+        el.style.display = "none";
+        el.style.opacity = "0";
+      });
+
+      const current = mediaElements[currentIndex];
+      current.style.display = "block";
+      setTimeout(() => {
+        current.style.opacity = "1";
+      }, 10); // fade in smoothly
+
+      if (current.tagName === "VIDEO") {
+        current.currentTime = 0;
+        current.play();
+        current.onended = () => {
+          currentIndex = (currentIndex + 1) % mediaElements.length;
+          playNext();
+        };
+      } else {
+        setTimeout(() => {
+          currentIndex = (currentIndex + 1) % mediaElements.length;
+          playNext();
+        }, 4000); // 3 seconds per image
+      }
+    }
+
+    playNext(); // Start the loop
+  </script>
+</body>
+
+</html>
